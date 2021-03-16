@@ -1,0 +1,149 @@
+body {
+  margin: px;
+  font-family: "Arial", sans-serif;
+}
+
+.sidebar {
+  padding: 10px;
+  width: 90px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow:10px 10px 10px grey; 
+  font-size: 10px;
+  vertical-align: bottom;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  
+  width: 100px;
+  background-color: white;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-family: Arial;
+  
+  
+}
+a:link {
+  color: black; 
+}
+
+
+
+ 
+.sidebar a.active {
+  background-color: lightblue;
+  color: white;
+}
+
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: black;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 10px 20px;
+  height: 50px;
+
+  
+}
+
+
+#ip1 {
+  border-radius: 8px;
+  background: white;
+  padding: 10px; 
+  width: 600px;
+  height: 8px;  
+  border: none;  
+}
+
+#ip2 {
+
+  position: left;
+}
+
+.conter {
+  padding: 0px;
+  left:0;
+  
+
+
+}
+.bottom-left {
+  position: absolute;
+
+  left: 16px;
+}
+
+  
+
+
+
+body {
+  background: #f1f1f1;
+  
+}
+button {
+  margin: 0px;
+  width: 300px;
+  height: 170px;
+  border: none;
+  background: #fff;
+  font-size: 1.1em;
+  color: black;
+  outline: none;
+
+  position: absolute;
+  top: 60%;
+  left: 225px;
+  transform: translateY(-50%);
+
+
+}
+button:active {
+  /* set time duration to your needs */
+  animation: gradient 100ms;
+  background: white;
+  color: #fff;
+  box-shadow: none;
+}
+.myHeading img {
+  margin-right:10px;
+}
+.myHeading h4, .myHeading img {
+  display:inline-block;
+  height: 20px;
+  vertical-align:middle;
+}
+.meta {
+  width: 80px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+  
+    float: none;
+    margin: auto;
+  }
+}
